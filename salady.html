@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salady</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+    <nav>
+            <img src="img/mo_quick_ico01.png" alt="">
+            <img src="img/mo_quick_ico02.png" alt="">
+            <img src="img/_-3.png" alt="">
+    </nav>
+    <header>
+        <div class="header_main">
+            <img src="img/salady_logo.jpeg" alt="">
+            <ul>
+                <li class="dropdown">
+                    <a class="a_box" href="#">브랜드</a>
+                    <ul class="sub">
+                        <li><a href="#">샐러디</a></li>
+                        <li><a href="#">샐러디키친</a></li>
+                        <li><a href="#">샐러디팜</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">메뉴</a>
+                    <ul class="sub">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">웜볼</a></li>
+                        <li><a href="#">샐러디</a></li>
+                        <li><a href="#">샌드&랩</a></li>
+                        <li><a href="#">브레드</a></li>
+                        <li><a href="#">토핑&드레싱</a></li>
+                        <li><a href="#">음료&사이드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">영양정보</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">APP</a>
+                    <ul class="sub">
+                        <li><a href="#">샐러디멤버십</a></li>
+                        <li><a href="#">샐러디오더</a></li>
+                        <li><a href="#">기프트카드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">매장</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">프랜차이즈</a>
+                    <ul class="sub">
+                        <li><a href="#">가맹안내</a></li>
+                        <li><a href="#">가맹상담 신청</a></li>
+                        <li><a href="#">가맹설명회 신청</a></li>
+                        <li><a href="#">추천입지</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">새소식</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">칭찬매장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="img/salady_1.png" alt="">
+                <img src="img/salady_2.png" alt="">
+                <img src="img/salady_3.png" alt="">
+                <img src="img/salady_4.jpeg" alt="">
+                <img src="img/salady_5.jpeg" alt="">
+            </div>
+        </section>
+        <section>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PhK-i3z_uvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <div>
+            <h3>
+                <b>SALADY 
+                INSTAGRAM</b>
+            </h3>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <p>개인정보처리방침</p>
+                <P>서비스이용약관</P>
+            </div>
+            <div>
+                <p>COPYRIGHT(C) 2022 ㈜샐러디. CO.LTD ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    const mainlists=document.querySelectorAll('.dropdown');
+    //상태변수 state= 1, 0
+    let state= 1;
+    for(let i=0; i<mainlists.length; i++){
+        mainlists[i].onclick=function(){
+            if(state==1){
+                this.getElementsByTagName('ul')[0].style.height='90px'
+                state=0;   //state--;
+            }else{
+                this.getElementsByTagName('ul')[0].style.height='0px'
+                state=1;   //state++;
+            }
+        }
+    }
+    </script>
+</body>
+</html>
