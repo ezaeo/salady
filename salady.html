@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="floating_menu">
       <img src="img/mo_quick_ico01.png" alt="" />
       <img src="img/mo_quick_ico02.png" alt="" />
       <img src="img/_-3.png" alt="" />
     </nav>
     <header>
       <div class="header_main">
-        <img src="img/salady_logo.jpeg" alt="" />
+        <img src="img/salady_logo.jpeg" alt="" class="header_logo" />
         <ul class="header_menu">
-          <li class="dropdown">
+          <li class="item dropdown">
             <a href="#">브랜드</a>
             <ul class="sub">
               <li><a href="#">샐러디</a></li>
@@ -30,7 +30,7 @@
               <li><a href="#">샐러디팜</a></li>
             </ul>
           </li>
-          <li class="dropdown">
+          <li class="item dropdown">
             <a href="#">메뉴</a>
             <ul class="sub">
               <li><a href="#">All</a></li>
@@ -42,10 +42,10 @@
               <li><a href="#">음료&사이드</a></li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <a href="#">영양정보</a>
           </li>
-          <li class="dropdown">
+          <li class="item dropdown">
             <a href="#">APP</a>
             <ul class="sub">
               <li><a href="#">샐러디멤버십</a></li>
@@ -53,10 +53,10 @@
               <li><a href="#">기프트카드</a></li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <a href="#">매장</a>
           </li>
-          <li class="dropdown">
+          <li class="item dropdown">
             <a href="#">프랜차이즈</a>
             <ul class="sub">
               <li><a href="#">가맹안내</a></li>
@@ -65,7 +65,7 @@
               <li><a href="#">추천입지</a></li>
             </ul>
           </li>
-          <li class="dropdown">
+          <li class="item dropdown">
             <a href="#">새소식</a>
             <ul class="sub">
               <li><a href="#">공지사항</a></li>
@@ -73,10 +73,11 @@
               <li><a href="#">칭찬매장</a></li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <a href="#">FAQ</a>
           </li>
         </ul>
+        <img src="img/menu_icon.png" alt="" class="menu_icon" />
       </div>
     </header>
     <main>
@@ -100,24 +101,16 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <section>
-        <div class="video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/PhK-i3z_uvU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-      <div>
-        <h3>
-          <b>SALADY INSTAGRAM</b>
-        </h3>
-      </div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/PhK-i3z_uvU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <p>SALADY INSTAGRAM</p>
     </main>
     <footer>
       <div class="footer_main">
@@ -137,10 +130,10 @@
       for (let i = 0; i < mainlists.length; i++) {
         mainlists[i].onclick = function () {
           if (state == 1) {
-            this.getElementsByTagName("ul")[0].style.height = "90px";
+            this.getElementsByTagName("ul")[0].style.height = "100%";
             state = 0; //state--;
           } else {
-            this.getElementsByTagName("ul")[0].style.height = "0px";
+            this.getElementsByTagName("ul")[0].style.height = "0%";
             state = 1; //state++;
           }
         };
