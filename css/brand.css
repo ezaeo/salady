@@ -1,0 +1,35 @@
+main{
+    gap: 0;
+}
+.title{
+    font-size: 42px;
+    padding-top: 50px;
+}
+
+.title_border{
+    width: 30px;
+    border: 2px solid black;
+}
+.box{
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    width: 1200px;
+    padding-top: 20px;
+}
+.box1{
+    font-size: 22px;
+    color: #175436;
+    font-weight: 600;
+    text-align: left;
+    width: 1200px;
+    padding-top: 20px;
+}
+.box2{
+    font-size: 18px;
+    color: #666;
+    font-weight: 600;
+    text-align: left;
+    width: 1200px;
+    padding-top: 20px;
+}
