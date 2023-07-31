@@ -98,18 +98,20 @@ div {
 img {
     display: block;
 }
-
-.footer_main {
-    width: 100%;
-    background: #000000;
-    color: #fefefe;
+.one{
+    height: 100px;
 }
-
-.footer_main1 {
+.footer_main1{
+    background: #333;
+}
+.footer_style {
+    height: 100px;
     display: flex;
-    border: 1px solid #fefefe;
-    gap: 20px;
+    gap: 30px;
+    color: #ededed;
+    padding-top: 10px;
 }
+
 
 .video {
     background-size: cover;
